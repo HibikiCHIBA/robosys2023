@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightaText: 2023 Hibiki Chiba
+# SPDX-License-Identifier: BSD-3-Clause
 
 import sys
 
