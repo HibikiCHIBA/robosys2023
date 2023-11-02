@@ -16,5 +16,7 @@ for line in sys.stdin :
 	ans += tonum(line)
 
 print(ans)
+for line in sys.stdin :
+	ans += tonum(line)
 
 # 実行：python3 plus_stdin.py < nums
