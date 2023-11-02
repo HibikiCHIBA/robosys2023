@@ -1,17 +1,13 @@
 #!/bin/bash
-# SPDX-FileCopyrightText: 2023 Hibiki Chiba
-# SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
-	echo NG at Line
-	res=1
+	echo ${1}行目が違うよ
+	ret=1
 }
 
 ret=0
+a=山田
+[ "$a" = 上田 ] || ng "$LINENO"
+[ "$a" = 山田 ] || ng "$LINENO"
 
-### I/O TEST ###
-out=$(seq 5 | python3 plus.py)
-[ "${out}" = 14 ] || ng ${LINENO}
-
-[ "$res" = 0 ] && echo OK
-exit $res
+exit $ret 
