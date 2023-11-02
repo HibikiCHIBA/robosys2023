@@ -10,4 +10,4 @@ a=山田
 [ "$a" = 上田 ] || ng "$LINENO"
 [ "$a" = 山田 ] || ng "$LINENO"
 
-exit $ret 
+exit $ret
