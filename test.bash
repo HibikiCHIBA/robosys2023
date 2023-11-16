@@ -11,7 +11,7 @@ ret=0
 
 ### I/O TEST ###
 out=$(seq 5 | python3 plus.py)
-[ "${out}" = 14 ] || ng ${LINENO}
+[ "${out}" = 15 ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo OK
 exit $res
